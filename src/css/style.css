@@ -1,0 +1,149 @@
+/*Geral*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+body{}
+
+img{
+    width: 28px;
+    height: 20px;
+}
+
+
+/*Main*/
+main{}
+main .form--container{
+    width: 100vw;
+    height: 210px;
+    background: #E9ECEF;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+main .form--container form{
+    margin: 20px 15px;
+    width: 344px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main .form--container form label{}
+main .form--container form input{
+    height: 40px;
+    padding: 0px 15px;
+    background: #F5F5F5;
+    border: 2px solid #F5F5F5;
+    border-radius: 8px;
+}
+main .form--container form span{
+    font-size: 14px;
+    color: #868E96;
+}
+main .form--container button{
+    width: 344px;
+    height: 40px;
+    background: #364FC7;
+    border: 1.4px solid #364FC7;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 16px;    
+}
+main .form--container button:hover{
+    cursor: pointer;
+    background: #939EDF;
+    border: 1.4px solid #939EDF;
+}
+
+/*Tabela*/
+.table--container{
+    padding: 20px;
+    padding-bottom: 0px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.table--container::-webkit-scrollbar{
+    width: 171px;
+    height: 10px;
+}
+.table--container::-webkit-scrollbar-thumb{
+    background: #E9ECEF;
+}
+#medal--board{
+    margin: auto;
+    width: 1200px;
+}
+#medal--board .title--row{
+    background: #364FC7;
+}
+.country{
+    padding-left: 15px;
+    text-align: start;
+}
+tr{
+    height: 70px;
+}
+th{
+    color: #FFF;
+    font-weight: 500;
+    vertical-align: middle;
+}
+th button{
+    width: 126px;
+    height: 40px;
+    padding: 10px 20px;
+    background: #4058CA;
+    border: 2px solid #4058CA;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 500;
+}
+th button:hover{
+    cursor: pointer;
+}
+
+th button:focus{
+    background: #4A60CC;
+    border: 2px solid #4A60CC;
+}
+td{
+    font-weight: 500;
+    color: #878787;
+    vertical-align: middle;
+    text-align: center;
+}
+td img{
+    margin: 0px 15px;
+}
+
+@media screen and (min-width: 718px){
+    main .form--container {
+        height: 160px;
+        align-items: center;
+    }
+    main .form--container form input {
+        width: 301px;
+    }
+    main .form--container button {
+        width: 101px;
+    }
+}
